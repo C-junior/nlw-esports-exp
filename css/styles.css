@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-blend-mode:lighten;
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+body * {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 160%;
+    color: rgb(112, 11, 11);
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+ul{
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+section div{
+    background-color: #101025;
+    border-radius: 8px;
+    padding: 32px;
+    padding-top: 16px;
+}
+
+section p{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+}
+.game-list img{
+    width: 100px;
+    border-radius: 8px;
+}
+.stream-list img{
+ border-radius: 50%;
+ width: 70px;
+}
+section{
+    background-image: linear-gradient(90deg, red 0%, purple 50%, blue 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section a {
+    position: relative;
+   
+}
+section ul li :hover{
+    transition: transform 0.3s;
+}
+section ul li :hover{
+    transform: scale(1.1);
+}
+
+header{
+    margin-top: 32px;
+      
+}
+header img{    
+    border-radius: 50%;   
+    width: 100%;
+    height: 100%;
+}
+header div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;    
+    margin: auto;
+    background-image: linear-gradient(90deg, red 0%, purple 50%, blue 100%);
+    padding: 5px;
+
+}
+
+header div:hover {
+ animation: rotate 3s infinite ease-in-out;
+}
+header img:hover {
+    animation: rotateimg 3s infinite ease-in-out;
+   }
+   
+
+/* animation*/
+@keyframes rotate {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotateimg {
+    100%{
+        transform: rotate(360deg);
+    }
+}
