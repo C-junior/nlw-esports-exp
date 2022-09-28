@@ -49,7 +49,7 @@ section p{
     letter-spacing: -0.18px;
 }
 .game-list img{
-    width: 100px;
+    width: 120px;
     border-radius: 8px;
 }
 .stream-list img{
@@ -92,10 +92,10 @@ header div{
 
 }
 
-header div:hover {
+header div {
  animation: rotate 3s infinite ease-in-out;
 }
-header img:hover {
+header img {
     animation: rotateimg 3s infinite ease-in-out;
    }
    
